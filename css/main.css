@@ -29,7 +29,14 @@ header {
   text-align: center;
   color: #715858;
   font-family: 'Sen', sans-serif;
+  position: relative;
+}
+
+.header-text {
   font-size: 50px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
 }
 
 .navigation {
@@ -379,6 +386,13 @@ opacity: 1;
 .logo {
   width: 150px;
   margin-left: 20px;
+}
+
+.header-logo {
+  width: 75px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 /*Cookie consent*/
