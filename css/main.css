@@ -383,10 +383,11 @@ opacity: 1;
 }
 /*end*/
 
+/*svg logo*/
 .logo {
   width: 150px;
   margin-left: 20px;
-  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .header-logo {
@@ -397,7 +398,6 @@ opacity: 1;
 }
 
 /*Cookie consent*/
-
 #cookiePopup {
   background: white;
   width: 25%;
@@ -562,9 +562,11 @@ opacity: 1;
     padding-left:3%;
     text-align: right;
   }
-  img .logo {
+  .logo {
     width: 80px;
     height: 80px;
+    margin-left: 0;
+    margin-bottom: 15px;
   }
 }
 
@@ -575,6 +577,10 @@ opacity: 1;
   }
   .borders, .roost, .farm-shop {
     margin-top: 4%;
+  }
+  .honey-carousel {
+    width: 90%;
+    height: auto;
   }
 }
 
