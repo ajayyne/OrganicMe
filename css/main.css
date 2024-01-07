@@ -181,11 +181,7 @@ header {
   text-align: center;
 }
 
-.cookie-container {
-  display: flex;
-  flex-direction: row;
-  align-items: end;
-}
+
 
 
 /*links*/
@@ -407,6 +403,13 @@ opacity: 1;
 }
 
 /*Cookie consent*/
+
+.cookie-container {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+
 #cookiePopup {
   background: white;
   width: 25%;
@@ -586,6 +589,11 @@ opacity: 1;
   .fb-logo, .yt-logo, .ig-logo {
     margin-bottom: 20px;
   }
+  #cookiePopup {
+    width: 70%;
+    text-align: center;
+    right: 70px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -601,4 +609,3 @@ opacity: 1;
     height: auto;
   }
 }
-
