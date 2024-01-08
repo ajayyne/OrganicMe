@@ -1,6 +1,6 @@
 <?php
     //variables:
-    $to = "adegnerbudd@gmail.com";
+    $to = "ec2266638@edinburghcollege.ac.uk";
     $subject = "Enquiry";
     $email_field = $_POST['email'];
     $message = $_POST['message'];
@@ -9,7 +9,7 @@
     //set variable of pop up message on screen
     $popupMessage = "Thank you, your email has been sent to $to";
     
-    //
+    //if else statement to show user if email has sent 
     $mailStatus = mail($to, $subject, $body);
     print($mailStatus);
     if ($mailStatus == True){
