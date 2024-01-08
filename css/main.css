@@ -281,11 +281,8 @@ width: 100%;
 transition: all ease-in-out .3s;
 opacity: 1;
 }
+/*end of slick track*/
 
-.responsive {
-    width: 100%;
-    height: auto;
-}
 
 .banner-text-one {
   color: white;
@@ -352,6 +349,7 @@ opacity: 1;
   outline: 0;
   box-shadow: 0 0 0 .25rem #FFF !important;
 }
+
 
 .responsive {
   width: 100%;
@@ -615,4 +613,10 @@ opacity: 1;
     justify-content: end;
     padding-left:3%;
     text-align: right;
-}
+  }
+  .slick-next:before {
+    display: none;
+  }
+  .slick-prev:before {
+    display: none;
+  }
