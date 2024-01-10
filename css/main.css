@@ -519,7 +519,6 @@ opacity: 1;
     }
   }
 
-
 /*small screen layout*/
 @media screen and (min-width: 100px) {
   .grid-container {
@@ -601,9 +600,8 @@ opacity: 1;
     margin-bottom: 20px;
   }
   #cookiePopup {
-    width: 70%;
+    width: 35%;
     text-align: center;
-    right: 70px;
   }
   .flex-column {
     width: 100%;
@@ -632,5 +630,21 @@ opacity: 1;
   }
   .slick-prev:before {
     display: none;
+  }
+  #cookiePopup {
+    width: 70%;
+    text-align: center;
+    right: 70px;
+  }
+  .cards {
+    width: 75%;
+    height: 75%;
+    margin-left: 60px;
+    margin-bottom: 10px;
+  }
+  .gardening-cards {
+    width: 70%;
+    height: 75%;
+    margin-left: 65px;
   }
 }
