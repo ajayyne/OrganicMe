@@ -395,10 +395,10 @@ opacity: 1;
 }
 
 .header-logo {
-  width: 75px;
+  width: 60px;
   float: left;
-  margin-left: 10px;
-  margin-top: 10px;
+  margin-left: 15px;
+  margin-top: 15px;
 }
 
 /*Cookie consent*/
@@ -606,6 +606,11 @@ opacity: 1;
   .flex-column {
     width: 100%;
   }
+  .gardening-cards {
+    width: 75%;
+    height: 70%;
+    margin-left: 65px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -623,6 +628,7 @@ opacity: 1;
   .navigation {
     justify-content: end;
     padding-left:3%;
+    padding-right: 3%;
     text-align: right;
   }
   .slick-next:before {
