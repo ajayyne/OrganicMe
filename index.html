@@ -19,9 +19,9 @@
             <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
             <link href="css/main.css" rel="stylesheet"></link>
         </head>
-
+        
         <body class="body">
-            <div class="main-body">
+            <main class="main-body">
                 <!--header banner-->
                 <div class="main-header">
                     <header id="header">
@@ -51,14 +51,15 @@
 
                 <!-- banner image-->
                 <div class="banner-image">
-                    <img alt="cows in farm field" src="images/banners/home-banner.png" srcset="images/banners/home-banner-small.png 576w, images/banners/home-banner.png 992w, images/banners/home-banner.png 1920w" sizes="(min-width: 575.98px) 100vw,
-                        (min-width: 991.98px) 100vw,
-                        (min-width: 1919.98px) 100vw,
-                        100vw" width="100%" height="100%">
+                    <picture>
+                        <source srcset="images/banners/home-banner.png" media="(min-width: 1000px)" width="100%" alt="Cows in Field, scottish organics, farm, shop, cafe"/>
+                        <source srcset="images/banners/home-banner.png" media="(min-width: 800px)" width="100%" alt="Cows in Field, scottish organics, farm, shop, cafe"/>
+                        <img src="images/banners/home-banner-small.png" media="(min-width: 100px)" width="100%" alt="Cows in Field, scottish organics, farm, shop, cafe"/>
+                    </picture>
                 </div>
 
                 <!--bio-->
-                <div class="container">
+                <section class="container">
                     <div class="row">
                         <div class="col-md-12">
                             <h1 class="about-us">About Us</h1>
@@ -69,7 +70,7 @@
                             <p class="bio">Organic Me was founded in 2018. Based in Kelso, Scottish Borders, we are passionate about providing the best and brightest produce on our 10 Acres of farmland. We are especially proud to launch our very own Organic Me Honey. Visit us to explore our range of organic Homeware, Clothing, and Wellness products.</p>
                         </div>
                     </div>
-                </div>
+                </section>
 
                 <!--image link cards-->
                 <div class="container">
@@ -98,7 +99,6 @@
                 <div class="container">
                     <h2 class="bestsellers">EXPLORE OUR BESTSELLERS</h2>
                 </div>
-
                 <!--slick track slider--> <!--make these link to product page?-->
                 <section class="responsive slider container">
                     <div>
@@ -131,13 +131,13 @@
                 </section>
                 
                 <!--text boxes of info-->
-                <div class="container home-info">
+                <section class="container home-info">
                     <div class="row">
                         <div class="col-md-4 flex-column">
                             <h1 class="info-heading">OUR FARM</h1>
                             <p class="flex-fill">We own 10 Acres of gorgeous land in the Scottish Borders where we guarantee you’ll find the best and brightest fresh produce. Come and meet our cows, sheep, goats, and chickens. Bring the family for a great day out in Kelso.</p>
                             <div class="container">
-                                <a href="about.html"><button class="read-more center">Read More</button></a>
+                                <a href="about.html"><button class="read-more center button-white">READ MORE</button></a>
                             </div>
                         </div>
                        
@@ -145,7 +145,7 @@
                             <h1 class="info-heading">ORGANIC CAFE</h1>
                             <p class="flex-fill">The Roost is our on site cafe dedicated to creating delicious organic sweet treats and serving sustainable coffee. Our Beans are fair trade and our food is always locally sourced. Pop in for a bite to eat after exploring our farm!</p>
                             <div class="container">
-                                <a href="#Theroost"><button class="read-more center">Read More</button></a>
+                                <a href="#Theroost"><button class="read-more center button-white">READ MORE</button></a>
                             </div>
                         </div>
                         
@@ -153,21 +153,24 @@
                             <h1 class="info-heading">OUR MISSION</h1>
                             <p class="flex-fill">Organic Me aims to deliver the best local organic food and products in Scotland. We're proud of the hard work that goes into producing our honey, sourcing our products, and running our farm. By 2025 we aim to implement 'Kind Earth'.</p>
                             <div class="container">
-                                <a href="about.html"><button class="read-more center">Read More</button></a>
+                                <a href="about.html"><button class="read-more center button-white">READ MORE</button></a>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
                 <!--multiple divs with content-->
-                <div class="container-fluid div-background">
+                <section class="container-fluid div-background">
                     <div class="container">
                         <div class="row image-section">
                             <div class="col-md-6">
-                                <img alt="Piglets" src="images/home-page/home-pigs.jpg" srcset="images/home-page/home-pigs.jpg 576w, images/home-page/home-farmer.jpg 992w, images/home-page/home-pigs.jpg 1920w" sizes="(min-width: 575.98px) 100vw,
-                            (min-width: 991.98px) 100vw,
-                            (min-width: 1919.98px) 100vw,
-                            100vw" width="100%" height="90%">
+                                <!--the picture tag forces the browser to load the correct image when re-sizing-->
+                                <!--this method works better than srcset-->
+                                <picture>
+                                    <source srcset="images/home-page/home-pigs.jpg" media="(min-width: 1000px)" width="100%" alt="Piglets"/>
+                                    <source srcset="images/home-page/home-farmer.jpg" media="(min-width: 800px)" width="100%" alt="Farmer"/>
+                                    <img src="images/home-page/home-pigs.jpg" media="(min-width: 100px)" width="100%" alt="Piglets"/>
+                                </picture>
                             </div>
                             <div class="col-md-6 section-text">
                                 <h3 class="borders">Based In The Borders</h3>
@@ -177,9 +180,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="container-fluid">
+                <section class="container-fluid">
                     <div class="container">
                         <div class="row image-section">
                             <div class="col-md-6 section-text">
@@ -189,23 +192,25 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <img alt="Farm Shop" src="images/home-page/farm-shop.jpg" srcset="images/home-page/farm-shop.jpg 576w, images/home-page/home-shop.jpg 992w, images/home-page/farm-shop.jpg 1920w" sizes="(min-width: 575.98px) 100vw,
-                            (min-width: 991.98px) 100vw,
-                            (min-width: 1919.98px) 100vw,
-                            100vw" width="100%" height="90%">
+                                <picture>
+                                    <source srcset="images/home-page/farm-shop.jpg" media="(min-width: 1000px)" width="100%" alt="Farm Shop"/>
+                                    <source srcset="images/home-page/home-shop.jpg" media="(min-width: 800px)" width="100%" alt="Farm Shop"/>
+                                    <img src="images/home-page/farm-shop.jpg" media="(min-width: 100px)" width="100%" alt="Farm Shop"/>
+                                </picture>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
                                                                
-                <div class="container-fluid div-background">
+                <section class="container-fluid div-background">
                     <div class="container">
                         <div class="row image-section">
                             <div class="col-md-6">
-                                <img alt="The Roost Cafe" src="images/home-page/the-roost.jpg" srcset="images/home-page/the-roost.jpg 576w, images/home-page/home-cafe.jpg 992w, images/home-page/the-roost.jpg 1920w" sizes="(min-width: 575.98px) 100vw,
-                            (min-width: 991.98px) 100vw,
-                            (min-width: 1919.98px) 100vw,
-                            100vw" width="100%" height="90%">
+                                <picture>
+                                    <source srcset="images/home-page/the-roost.jpg" media="(min-width: 1000px)" width="100%" alt="The Roost Cafe"/>
+                                    <source srcset="images/home-page/home-cafe.jpg" media="(min-width: 800px)" width="100%" alt="The Roost Cafe"/>
+                                    <img src="images/home-page/the-roost.jpg" media="(min-width: 100px)" width="100%" alt="The Roost Cafe"/>
+                                </picture>
                             </div>
                             <div class="col-md-6 section-text" id="Theroost">
                                 <h3 class="roost">The Roost</h3>
@@ -215,7 +220,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
                 <!--back to top button-->
                 <div class="container back-to-top">
@@ -226,7 +231,7 @@
                     <div class="container-fluid footer">
                         <div class="row pt-5">
                             <div class="col-sm-3">
-                                <img src="images/logo/logo-01.svg" class="logo">
+                                <img src="images/logo/logo-01.svg" class="logo" alt="Organic Me logo">
                             </div>
                             <div class="col-sm-3">         <!--copywright info-->
                                 <p>organic me<br>2023 ©</p>
@@ -252,7 +257,7 @@
                         </div>
                     </div>
                 </footer>
-            </div>
+            </main>
 
             <!--cookie consent-->
             <div class="container cookie-container">

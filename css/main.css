@@ -127,6 +127,7 @@ header {
   text-align: center;
   background-color: #DCA078;
   padding: 5%;
+  color: white !important;
 }
 
 .gardening-text, .strong {
@@ -152,6 +153,10 @@ header {
 .div-text {
   max-width: 85%;
   text-align: center;
+}
+
+.button-white {
+  color: white !important;
 }
 
 .button-book {
@@ -257,7 +262,7 @@ a:visited {
 /*Slick track*/
 .slider {
   width: 65%;      
-  margin: 100px auto;
+  margin-top: 5%;
 }
 
 .slick-slide {
@@ -332,23 +337,27 @@ opacity: 1;
 }
 
 /*accordion styling*/
+/*accordion button text color*/
+.accordion-button {
+  color: #715858 !important;
+}
+
 .accordion-button:not(.collapsed) {
-  color: #FFF  !important;
+  color: #715858  !important;
   background-color: #C8DDBE !important;
 }
 
 .accordion-button:link, .accordion-button:visited, .accordion-button:hover, .accordion-button:active  {
   background-color: #C8DDBE !important;
-    color:#FFF !important;
-    text-decoration: none !important;
-     border: hidden !important;
-       border-color: #FFF !important;
-    box-shadow: 0px !important;
+  color:#715858 !important;
+  text-decoration: none !important;
+  border: hidden !important;
+  border-color: #715858 !important;
+  box-shadow: 0px !important;
 }
 
 .accordion-button:focus {
   z-index: 3;
-  border-color: #FFF !important;
   outline: 0;
   box-shadow: 0 0 0 .25rem #FFF !important;
 }
@@ -547,6 +556,9 @@ opacity: 1;
   .zoom:hover{
     transform: scale(none);
    }
+   .div-text {
+    text-align: center;
+  }
 }
 
 
@@ -575,9 +587,17 @@ opacity: 1;
   .zoom:hover{
     transform: scale(1.05);
    }
+   .div-text {
+    text-align: center;
+  }
 }
 
+/*medium screen layout*/
 @media screen and (max-width: 991px) {
+
+  .div-text {
+    text-align: left;
+  }
   .facebook {
     margin-bottom: 40px;
   }
@@ -610,12 +630,13 @@ opacity: 1;
     width: 100%;
   }
   .gardening-cards {
-    width: 75%;
-    height: 70%;
-    margin-left: 65px;
+    width: 85%;
+    height: 90%;
+    margin: auto;
   }
 }
 
+/*mobile*/
 @media screen and (max-width: 768px) {
   .resize {
     width: 80%;
@@ -646,14 +667,46 @@ opacity: 1;
     right: 70px;
   }
   .cards {
-    width: 75%;
-    height: 75%;
-    margin-left: 60px;
-    margin-bottom: 10px;
+    width: 80%;
+    height: 80%;
+    margin: auto;
   }
   .gardening-cards {
-    width: 70%;
-    height: 75%;
-    margin-left: 65px;
+    width: 85%;
+    height: 90%;
+    margin: auto;
+  }
+  .div-text {
+    text-align: center;
+  }
+  .header-text {
+    font-size: 35px;
+    margin-top: 15px;
+  }
+  .bestsellers {
+    padding-top: 15%;
+  }
+  .home-info {
+    margin-top: 20%;
+  }
+  .product-links {
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+  .shopping {
+    margin-bottom: 15%;
+  }
+  .benefits {
+    text-align: center;
+  }
+  .community {
+    margin-top: 15%;
+  }
+  .honey-reviews {
+    margin-top: 10%;
+    margin-bottom: 15%;
+  }
+  .slider {
+    overflow-x: none;
   }
 }

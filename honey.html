@@ -21,7 +21,7 @@
         </head>
 
         <body class="body">
-            <div class="main-body">
+            <main class="main-body">
                 <!--header banner-->
                 <div class="main-header">
                     <header id="header">
@@ -49,10 +49,11 @@
 
                 <!-- banner image-->
                 <div class="banner-image">
-                    <img alt="organic honeycomb" src="images/banners/honey-banner.png" srcset="images/banners/honey-banner-small.png 576w, images/banners/honey-banner-small.png 992w, images/banners/honey-banner.png 1920w" sizes="(min-width: 575.98px) 100vw,
-                        (min-width: 991.98px) 100vw,
-                        (min-width: 1919.98px) 100vw,
-                        100vw" width="100%" height="100%">
+                    <picture>
+                        <source srcset="images/banners/honey-banner.png" media="(min-width: 1000px)" width="100%" alt="Organic Honey"/>
+                        <source srcset="images/banners/honey-banner.png" media="(min-width: 800px)" width="100%" alt="Organic Honey"/>
+                        <img src="images/banners/honey-banner-small.png" media="(min-width: 100px)" width="100%" alt="Organic Honey"/>
+                    </picture>
                 </div>
                 
                 <div class="container">
@@ -96,7 +97,7 @@
                 </div>
 
                 <!--benefits of honey-->
-                <div class="container div-background honey-product">
+                <section class="container div-background honey-product">
                     <h2 class="benefits">The Benefits of Organic Honey</h2>
                     <div class="row">
                         <div class="col-md-6">
@@ -110,20 +111,20 @@
                             </ul>
                         </div>
                         <div class="col-md-6">
-                            <img src="images/honey-product-two.png" alt="Honeycomb" class="responsive honey-product">
+                            <img src="images/honey/honey-product-two.png" alt="Honeycomb" class="responsive honey-product">
                         </div>
                     </div>
-                </div>
+                </section>
 
                 <!--slick track for reviews-->
                 <div class="container reviews sm">
                     <div class="container center">
-                        <h2>We let the community speak for us:</h2>
+                        <h2 class="community">We let the community speak for us:</h2>
                     </div>
-                    <section class="responsive slider container center">
+                    <section class="responsive slider container center honey-reviews">
                         <div class="container review">
                             <h2>★★★★★</h2>
-                            <p>The best honey I've ever tasted! This is one of my pantry staples now. Amazing on top of poridge and toast for a great breakfast for people with a sweetooth.</p>
+                            <p>The best honey I've ever tasted! This is one of my pantry staples now. Amazing on top of porridge and toast for a great breakfast for people with a sweetooth.</p>
                             <h4>Amy - 23 - Kelso</h4>
                         </div>
                         <div class="container review">
@@ -153,7 +154,7 @@
                     <div class="container-fluid footer">
                         <div class="row p-3">
                             <div class="col-sm-3">
-                                <img src="images/logo/logo-01.svg" class="logo">
+                                <img src="images/logo/logo-01.svg" class="logo" alt="Organic Me logo">
                             </div>
                             <div class="col-sm-3">         <!--copywright info-->
                                 <p>organic me<br>2023 ©</p>
@@ -179,7 +180,7 @@
                         </div>
                     </div>
                 </footer>
-            </div>
+            </main>
 
             <!--javascript for slider to function with specific breakpoints-->
             <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
